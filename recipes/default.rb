@@ -17,8 +17,4 @@
 # limitations under the License.
 #
 
-if platform?('windows')
-  include_recipe 'chef-client::task'
-else
-  include_recipe 'chef-client::service'
-end
+include_recipe 'chef-client::service'
